@@ -1,0 +1,10 @@
+env: 
+  CI=false
+
+langage: node_js
+
+node_js:
+  - 11
+
+script:
+  - npm run build
