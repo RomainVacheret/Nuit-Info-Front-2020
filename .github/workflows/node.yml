@@ -1,0 +1,16 @@
+name: Nuit-Info-Front-2020
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 11
+    - uses: actions/setup-node@v1
+    - run: npm install
+    - run: npm run build --if-present
+    env: 
+      CI: false
