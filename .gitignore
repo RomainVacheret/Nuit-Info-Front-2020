@@ -7,8 +7,13 @@
 
 # testing
 /coverage
-.eslintcache
 *.log
+
+# cypress
+.eslintcache
+/cypress/fixtures
+/cypress/videos
+/cypress/screenshots
 
 # production
 /build
