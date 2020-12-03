@@ -1,48 +1,52 @@
 import React, { useState } from 'react';
+import GroupIcon from '@material-ui/icons/Group';
 
-import { Container, Menu, MenuItem, IconButton, Typography } from '@material-ui/core';
+import {
+    MenuItem,
+    Typography
+} from '@material-ui/core';
+import ScrollingMenu from "../../NavBar/ScrollingMenu";
 
-import './FriendList.css';
 
 const FriendList = ({ friends }) => {
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
 
-    const handleClick = (event) => setAnchorEl(event.currentTarget);
-    const handleClose = () => setAnchorEl(null);
-    
+    const [open, setOpen] = React.useState(false);
+    const anchorRef = React.useRef(null);
+
+    const handleClose = (event) => {
+        if (anchorRef.current && anchorRef.current.contains(event.target)) {
+            return;
+        }
+        setOpen(false);
+    };
+
+// return focus to the button when we transitioned from !open -> open
+    const prevOpen = React.useRef(open);
+    React.useEffect(() => {
+        if (prevOpen.current === true && open === false) {
+            anchorRef.current.focus();
+        }
+
+        prevOpen.current = open;
+    }, [open]);
+
     return (
-        <Container container>
-            <IconButton
-                aria-label="more"
-                aria-controls="long-menu"
-                aria-haspopup='true'
-                onClick={ handleClick }
-            >
-            <h1>Click me</h1>
-            </IconButton>
-            <Menu
-                className='friendlist-menu'
-                anchorEl={ anchorEl }
-                keepMounted
-                open={ open }
-                onClose={ handleClose }
-            >
-                {
-                    friends.map((friend, idx) => (
-                        <MenuItem
-                            className='friendlist-menu-item'
-                            key={ idx }
-                            onClick={ handleClose }
-                        >
-                            <Typography>
-                                {`${ friend.firstName } ${ friend.lastName }`}
-                            </Typography>
-                        </MenuItem>
-                    ))
-                }
-            </Menu>
-        </Container>
+        <>
+            <ScrollingMenu cpt1={ (<><GroupIcon /> Amis</>) } cpt2=
+            {
+                friends.map((friend, idx) => (
+                    <MenuItem
+                        className='friendlist-menu-item'
+                        key={ idx }
+                        onClick={ handleClose }
+                    >
+                        <Typography>
+                            {`${ friend.firstName } ${ friend.lastName }`}
+                        </Typography>
+                    </MenuItem>
+                ))
+            }/>
+        </>
     );
 };
 
