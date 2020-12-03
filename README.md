@@ -1,6 +1,7 @@
 # Projet fait dans le cadre de [la nuit de l'info 2020](https://www.nuitdelinfo.com/) !
 
 ![Build](https://github.com/RomainVacheret/Nuit-Info-Front-2020/workflows/Nuit-Info-Front-2020/badge.svg)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=RomainVacheret_Nuit-Info-Front-2020&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=RomainVacheret_Nuit-Info-Front-2020)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 # Installation
 ## Prérequis
