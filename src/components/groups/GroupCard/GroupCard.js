@@ -7,7 +7,7 @@ const GroupCard = ({ name, nbSubs, nbPosts }) =>  {
         <Card style={{ maxWidth: '200px' }}>
             <CardActionArea>
                 <Container container>
-                    <Typography variant='h5'>{ name }</Typography>
+                    <Typography variant='h5' style={{ textDecoration: 'underline' }}>{ name }</Typography>
                     <Grid container direction='column' justify="space-evenly">
                         <Typography>{ nbSubs } abonnés</Typography>
                         <Typography>{ nbPosts } postes </Typography>
