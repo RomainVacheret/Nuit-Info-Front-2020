@@ -1,7 +1,11 @@
 # Projet fait dans le cadre de [la nuit de l'info 2020](https://www.nuitdelinfo.com/) !
 
 ![Build](https://github.com/RomainVacheret/Nuit-Info-Front-2020/workflows/Nuit-Info-Front-2020/badge.svg)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=RomainVacheret_Nuit-Info-Front-2020&metric=code_smells)](https://sonarcloud.io/dashboard?id=RomainVacheret_Nuit-Info-Front-2020)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=RomainVacheret_Nuit-Info-Front-2020&metric=alert_status)](https://sonarcloud.io/dashboard?id=RomainVacheret_Nuit-Info-Front-2020)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=RomainVacheret_Nuit-Info-Front-2020&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=RomainVacheret_Nuit-Info-Front-2020)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=RomainVacheret_Nuit-Info-Front-2020&metric=sqale_index)](https://sonarcloud.io/dashboard?id=RomainVacheret_Nuit-Info-Front-2020)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=RomainVacheret_Nuit-Info-Front-2020&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=RomainVacheret_Nuit-Info-Front-2020)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 # Installation
 ## Prérequis
