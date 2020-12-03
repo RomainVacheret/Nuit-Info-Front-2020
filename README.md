@@ -1,6 +1,6 @@
 # Projet fait dans le cadre de [la nuit de l'info 2020](https://www.nuitdelinfo.com/) !
 
-[![Build Status](https://travis-ci.org/RomainVacheret/Nuit-Info-Front-2020.svg?)](https://travis-ci.org/RomainVacheret/Nuit-Info-Front-2020.svg)
+![Build](https://github.com/RomainVacheret/Nuit-Info-Front-2020/workflows/Nuit-Info-Front-2020/badge.svg)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 # Installation
 ## Prérequis
