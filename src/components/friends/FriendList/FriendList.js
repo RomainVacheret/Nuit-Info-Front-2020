@@ -32,7 +32,7 @@ const FriendList = ({ friends }) => {
 
     return (
         <>
-            <ScrollingMenu cpt1={ (<><GroupIcon /> Amis</>) } cpt2=
+            <ScrollingMenu cpt1={ (<><GroupIcon fontSize="large" /> Amis</>) } cpt2=
             {
                 friends.map((friend, idx) => (
                     <MenuItem
