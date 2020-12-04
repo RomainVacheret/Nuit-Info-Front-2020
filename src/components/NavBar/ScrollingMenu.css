@@ -1,0 +1,10 @@
+#menu-list-grow {
+    list-style-type: none;
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #85ffc6 ;
+    /*#64b6f5*/
+}
+
