@@ -7,6 +7,7 @@ import UserPP from "./UserPP";
 
 import UserContext from 'contexts/UserContext/UserContext';
 
+// import colorList from './color_list.json';
 
 const Profile = () => {
 
@@ -21,8 +22,12 @@ const Profile = () => {
         setOpen(false);
     };
 
+    const letter = context.isAuthenticated ? 'B' : '?';
+    // const color = colorList[Math.floor(Math.random() * color.length)];
+    const color = '#B36BED';
+
     return(
-        <ScrollingMenu cpt1={ <UserPP letter='B' color='#B36BED'/> } cpt2={ 
+        <ScrollingMenu cpt1={ <UserPP letter={ letter } color={ color }/> } cpt2={ 
         <>
             {
                 context.isAuthenticated ? (
