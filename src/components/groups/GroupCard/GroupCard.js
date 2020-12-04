@@ -4,7 +4,8 @@ import { Card, Grid, CardActionArea, Container, Typography } from '@material-ui/
 
 const GroupCard = ({ name, nbSubs, nbPosts }) =>  {
     return (
-        <Card style={{ maxWidth: '200px' }}>
+        <Card style={{ maxWidth: '200px', background: '#85ffc6',
+         }}>
             <CardActionArea>
                 <Container container>
                     <Typography variant='h5' style={{ textDecoration: 'underline' }}>{ name }</Typography>
