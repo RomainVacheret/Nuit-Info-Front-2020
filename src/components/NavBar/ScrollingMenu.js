@@ -9,7 +9,7 @@ import {
     MenuList, Popper
 } from '@material-ui/core';
 
-
+import './ScrollingMenu.css';
 
 const ScrollingMenu = ({ cpt1, cpt2 }) => {
 
